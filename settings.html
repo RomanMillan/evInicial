@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Control de alumnos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="listAlumns.html">Lista de Alumnos</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Agregar Alumnos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ajustes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+     </nav>
+    <div class="container">
+        <div class="wrap">
+            <h1>Ajuestes de accesibilidad</h1>
+            <div class="row">
+                <div class="col">
+                    <h3>Ajustar tamaño de la fuente</h3>
+                    <p class="fontside">Texto para ajustar el tamaño de la fuente</p>
+                    <div class="sizeFont">
+                        <h3 id="sizeH3"></h3>
+                    </div>
+                    <button class="btn btn-primary growFont">Aumentar +1</button>
+                    <button class="btn btn-danger diminishFont">Disminuir -1</button>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <h3>Cambiar color de la fuente</h3>
+                    <p>Texto para ajustar el color de la fuente</p>
+                    <button class="btn btn-primary">Azul</button>
+                    <button class="btn btn-success">Verde</button>
+                    <button class="btn btn-warning">Aleatorio</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<script src="accessibility.js"></script>
+</body>
+</html>

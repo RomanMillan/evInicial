@@ -1,0 +1,23 @@
+body{
+    background-image: url('assets/imgs/background.webp');
+}
+
+h1, h2,h3{
+    text-align: center;
+    margin: 4rem;
+}
+
+button {
+    text-align: right !important;
+}
+
+.wrap{
+    padding: 2rem 3rem;
+    text-align: center;
+    color: #fff;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(15px);
+}
+  
