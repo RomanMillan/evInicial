@@ -4,8 +4,18 @@ const addName = document.querySelector('.addName');
 const deleteNameInput = document.querySelector('.deleteNameInput');
 const deleteName = document.querySelector('.deleteName');
 
-// lista de nombres
-let listName = ["Manuel Rodriguez Sesamo", "Enrique Roldan Junk", "Susana López Sanchez", "Samanta Mendez Gonzalez"];
+// lista de nombres (Simulación de una DB)
+let listName = ["Elsa Galán Tejedor", 
+                  "Álvaro Alguacil Santana", "Juan David Arnal Carvallo", 
+                  "Laura Sofía Sancho Martínez", "Rolando Freixa Narvaez", 
+                  "Samanta Mendez Gonzalez", "Ernesto Maroto Rodríguez", 
+                  "María Vera Escribano"
+];
+    
+// carga la lista de nombres al cargar la ventana del navegador
+window.addEventListener("load", ()=>{
+   loadList();
+})
 
 // agrega un nombre a la lista
 addName.addEventListener("submit",(e)=>{
@@ -26,11 +36,6 @@ deleteName.addEventListener('submit',(e)=>{
       deleteList(data);
     }  
    }
-})
-
-// carga la lista de nombres al cargar la ventana del navegador
-window.addEventListener("load", ()=>{
-   loadList();
 })
 
 // añade una lista con los nombres del array (listNames) al documento HTML
@@ -54,10 +59,11 @@ function addList(data){
    listNames.appendChild(li);
 }
 
-// borra un nombre de la lista 
+// borra un nombre de la lista listName (DB) y documento HTML
 function deleteList(data){
    let indice = listName.indexOf(data);
    listName.splice(indice, 1);
+
    let child = listNames.children[indice];
    listNames.removeChild(child);
 }

@@ -23,6 +23,10 @@ h3{
     margin: 2rem;
 }
 
+h4{
+    font-size: 1.3em;
+}
+
 .wrap{
     min-height: calc(100vh - 56px - 56px) !important;
     padding: 2rem 3rem;
@@ -48,4 +52,13 @@ footer{
 .modifyCol{
     margin-left: 4em;
     margin-right: 4em;
+}
+
+.growFont, .diminishFont, .blue, .green, .random{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+hr{
+    height: 20px;
 }
