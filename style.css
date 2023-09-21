@@ -35,6 +35,19 @@ h4{
     border-left: 5px solid #fff;
     border-right: 5px solid #fff;
     box-shadow: 0px 0px 25px #222;
+    /* backdrop-filter: blur(25px); */
+}
+.backdrop-blur {
+    min-height: calc(100vh - 56px - 56px) !important;
+    padding: 2rem 3rem;
+    text-align: center;
+    color: #fff;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    box-shadow: 0px 0px 25px #222;
+    /* background-color: rgba(0, 0, 0, 0.788); */
+    background-color: rgba(7, 7, 7, 0.952);
+    -webkit-backdrop-filter: blur(2em);
     backdrop-filter: blur(25px);
 }
 
